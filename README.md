@@ -1,7 +1,7 @@
 # Jets Reformation
 In this repository we provide information and dataset that allow the reproduction of the results found in the manuscript "Downstream Super-magnetosonic Plasma Jet Generation as a Direct Consequence of Shock Reformation" currently under consideration for Nature Communications journal.
 
-- [![Publication: Under consideration](https://img.shields.io/badge/Publication-Under%20consideration-green?style=flat&logo=openaccess)](https://www.researchsquare.com/article/rs-711807/v1)
+[![Publication: Under consideration](https://img.shields.io/badge/Publication-Under%20consideration-green?style=flat&logo=openaccess)](https://www.researchsquare.com/article/rs-711807/v1)
 
 ### Corresponding Author
 [![Savvas Raptis: 0000-0002-4381-3197](https://img.shields.io/badge/Savvas%20Raptis-0000--0002--4381--3197-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-4381-3197) 
