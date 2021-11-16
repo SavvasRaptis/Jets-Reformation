@@ -20,7 +20,7 @@ For fully reproducing the figures you will need the irfu-matlab library which is
 ```matlab
 irfu
 ```
-At the tome of the latest submission of the article, the following software versions were used:
+At the time of the latest submission of the article, the following software versions were used:
 
 * irfu-matlab version:  v1.16.0
 * inkscape version:  v0.92
