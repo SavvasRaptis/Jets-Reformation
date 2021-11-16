@@ -1,10 +1,10 @@
 # Jets Reformation
-In this repository we provide information and dataset that allow the reproduction of the results found in the manuscript "Downstream Super-magnetosonic Plasma Jet Generation as a Direct Consequence of Shock Reformation"
+In this repository we provide information and dataset that allow the reproduction of the results found in the manuscript "Downstream Super-magnetosonic Plasma Jet Generation as a Direct Consequence of Shock Reformation" currently under consideration for Nature Communications journal.
 
 - [![Publication: Under consideration](https://img.shields.io/badge/Publication-Under%20consideration-green?style=flat&logo=openaccess)](https://www.researchsquare.com/article/rs-711807/v1)
 
 ### Corresponding Author
-**Savvas Raptis**  - [Savvas Raptis: 0000-0002-4381-3197](https://img.shields.io/badge/Savvas%20Raptis-0000--0002--4381--3197-green?style=flat&logo=orcid)
+**Savvas Raptis**  - [![Savvas Raptis: 0000-0002-4381-3197](https://img.shields.io/badge/Savvas%20Raptis-0000--0002--4381--3197-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-4381-3197) 
 
 ## Repository Content
 * [data](data) : Contains a .mat file with the MMS measurements. Furthermore, we provide a README file with the information about reading the data provided. We however, strongly recommend if an extensive reproduction of the results takes place to visit the official MMS and OMNIweb repositories and acknowledge their use rather than using the pre made data products of this folder.
