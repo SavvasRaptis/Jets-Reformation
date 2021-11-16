@@ -14,7 +14,7 @@ We will discuss below how to generate the base figures that do not include the s
 
 ## Step-by-step instructions
 
-### Figure 1,2
+### Figures 1,2
 
 * FIG1 and FIG2 (a) were generated using the  mms.mms4_pl_conf function of [irfu-matlab](https://github.com/irfu/irfu-matlab) package
 FIG1 and FIG2 (b,c) are ladder plots of different MMS spacecraft. all the raw data available for them can be found in the MMS public depository.
