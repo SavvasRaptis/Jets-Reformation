@@ -1,0 +1,134 @@
+!
+! Source : CX_CH_EFW_L2_BB.ceh
+! Generated: DDD
+!
+START_META     =   DATA_TYPE
+   ENTRY       =   "CP"
+END_META       =   DATA_TYPE
+START_META     =   DATASET_ID
+   ENTRY       =   "CXXX_CP_EFW_L2_BB"
+END_META       =   DATASET_ID
+START_META     =   DATASET_TITLE
+   ENTRY       =   "B-field, ISR2 (internal burst)"
+END_META       =   DATASET_TITLE
+START_META     =   DATASET_TYPE
+   ENTRY       =   "Magnetic_Field"
+END_META       =   DATASET_TYPE
+START_META     =   DATASET_DESCRIPTION
+   ENTRY       =   "This dataset contains measurements of the"
+   ENTRY       =   "Magnetic field (internal burst)"
+   ENTRY       =   "from the EFW experiment on the Cluster CXXX spacecraft"
+   ENTRY       =   " "
+   ENTRY       =   "Detailed quality information is provided as a 16 bit set of flags"
+   ENTRY       =   "in the parameter B_bitmask__CXXX_CP_EFW_L2_EB. The meaning of"
+   ENTRY       =   "the bits is as follows (LSB numbering starting at 0):"
+   ENTRY       =   "Bit  0: Reset."
+   ENTRY       =   "Bit  1: N/A."
+   ENTRY       =   "Bit  2: Probe latchup."
+   ENTRY       =   "Bits 3-15: N/A."
+END_META       =   DATASET_DESCRIPTION
+START_META     =   DATASET_CAVEATS
+   ENTRY       =   "Various potential problems in the data have been treated automatically"
+   ENTRY       =   "in the CAA data processing. Examples are solar wind, lobe, and"
+   ENTRY       =   "plasmaspheric wakes. Data quality is indicated by the variable"
+   ENTRY       =   "B_quality__CXXX_CP_EFW_L2_BB (4=best quality). Detailed quality"
+   ENTRY       =   "information is given in the 16-bit variable B_bitmask__CXXX_CP_EFW_L2_EB."
+   ENTRY       =   "Please refer to the DATASET_DESCRIPTION information above for details."
+   ENTRY       =   ""
+   ENTRY       =   "For more information on data quality and how the CAA data are processed,"
+   ENTRY       =   "please consult the EFW CAA Users Guide and the EFW CAA Interface Control"
+   ENTRY       =   "Document (ICD)."
+   ENTRY       =   ""
+   ENTRY       =   "The timing can be inaccurate if the TCOR is not applied:"
+   ENTRY       =   "*CXXX_CQ_DWP_TCOR"
+END_META       =   DATASET_CAVEATS
+START_META     =   TIME_RESOLUTION
+   ENTRY       =   0.0022222
+END_META       =   TIME_RESOLUTION
+START_META     =   MIN_TIME_RESOLUTION
+   ENTRY       =   0.0022222
+END_META       =   MIN_TIME_RESOLUTION
+START_META     =   MAX_TIME_RESOLUTION
+   ENTRY       =   0.0022222
+END_META       =   MAX_TIME_RESOLUTION
+START_META     =   PROCESSING_LEVEL
+   ENTRY       =   "Calibrated"
+END_META       =   PROCESSING_LEVEL
+
+START_META     =   CONTACT_COORDINATES
+   ENTRY       =   "Mats Andre>PI>Mats.Andre@irfu.se"
+END_META       =   CONTACT_COORDINATES
+!
+START_META     =   ACKNOWLEDGEMENT
+   ENTRY       =   "Please acknowledge the EFW team and the ESA Cluster Active Archive in any"
+   ENTRY       =   "publication based upon use of these data"
+END_META       =   ACKNOWLEDGEMENT
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                   Variables                         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+START_VARIABLE    = time_tags__CXXX_CP_EFW_L2_BB
+  PARAMETER_TYPE    = "Support_Data"
+  VALUE_TYPE      = ISO_TIME
+  DELTA_PLUS      = 0
+  DELTA_MINUS     = 0
+  FILLVAL         = 9999-12-31T23:59:59Z
+  LABLAXIS        = "UT"
+  FIELDNAM        = "Universal Time"
+END_VARIABLE      = time_tags__CXXX_CP_EFW_L2_BB
+!
+START_VARIABLE      = B_Vec_xyz_ISR2__CXXX_CP_EFW_L2_BB
+  PARAMETER_TYPE    = "Data"
+  SIZES             = 3
+  VALUE_TYPE        = FLOAT
+  ENTITY            = "Magnetic_Field"
+  PROPERTY          = "Vector"
+  FLUCTUATIONS      = "Waveform"
+  CATDESC           = "Magnetic field (internal burst)"
+  FIELDNAM          = "Magnetic field (internal burst)"
+  SI_CONVERSION     = "1.0e-3>T"
+  UNITS             = "nT"
+  FILLVAL           = -1000000000.000
+  QUALITY           = B_quality__CXXX_CP_EFW_L2_BB
+  SIGNIFICANT_DIGITS= 6
+  PARAMETER_CAVEATS = ""
+  COORDINATE_SYSTEM = "ISR2"
+  FRAME_VELOCITY    = "Observatory"
+  TENSOR_ORDER      = 1
+  REPRESENTATION_1  = "x", "y", "z"
+  LABEL_1           = "Bx", "By", "Bz"
+  LABLAXIS          = "B"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L2_BB
+END_VARIABLE        = B_Vec_xyz_ISR2__CXXX_CP_EFW_L2_BB
+!
+START_VARIABLE      = B_bitmask__CXXX_CP_EFW_L2_BB
+  PARAMETER_TYPE    = "Support_Data"
+  SIZES             = 1
+  VALUE_TYPE        = INT
+  ENTITY            = "Magnetic_Field"
+  PROPERTY          = "Status"
+  CATDESC           = "Magnetic field (internal burst) measurement quality bitmask"
+  FIELDNAM          = "Magnetic field (internal burst) measurement quality bitmask"
+  SI_CONVERSION     = "1>unitless"
+  UNITS             = "unitless"
+  FILLVAL           = 0
+  SIGNIFICANT_DIGITS= 5
+  LABLAXIS          = "Bitmask"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L2_BB
+END_VARIABLE        = B_bitmask__CXXX_CP_EFW_L2_BB
+!
+START_VARIABLE      = B_quality__CXXX_CP_EFW_L2_BB
+  PARAMETER_TYPE    = "Support_Data"
+  SIZES             = 1
+  VALUE_TYPE        = INT
+  ENTITY            = "Magnetic_Field"
+  PROPERTY          = "Status"
+  CATDESC           = "Magnetic field (internal burst) measurement quality flag (4=best)"
+  FIELDNAM          = "Magnetic field (internal burst) measurement quality flag (4=best)"
+  SI_CONVERSION     = "1>unitless"
+  UNITS             = "unitless"
+  FILLVAL           = 0
+  SIGNIFICANT_DIGITS= 1
+  LABLAXIS          = "Quality"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L2_BB
+END_VARIABLE        = B_quality__CXXX_CP_EFW_L2_BB

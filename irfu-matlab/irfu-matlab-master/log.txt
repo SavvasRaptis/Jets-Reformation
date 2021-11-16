@@ -1,0 +1,77 @@
+2021-06-23 v1.16.0 NASA CDF patch, updated compiled Fortran mex, uppdated SolarOrbiter code base, and a lot more minor fixes.
+2020-04-21 v1.15.1 MMS slow mode gain and offset improvement, MMS L2pre fallback to AFG in no DFG, IGRF-13, added support for SolarOrbiter.
+2019-10-08 v1.15.0 NASA CDF patch, MMS changed slow mode datarate, added support for some Rosetta files, and a few minor fixes.
+2018-10-05 v1.14.2 NASA CDF patch, MMS2 sdp2 failure (2018/09/21), and a few minor fixes.
+2018-07-02 v1.14.1 MMS ADC offsets improved, and a few minor fixes.
+2018-06-18 v1.14.0 MMS swwake and adp shadow improved, Cluser CSA will now require personal accounts, and a lot more minor fixes.
+2018-01-10 v1.13.3 MMS swwake improved, MMS use FillValue during maneuvers and eclipses, minor fixes for Cluster processing, and some other minor fixes.
+2017-09-26 v1.13.2 Matlab R2014b or later now recommended (.gov moved to https), improve ADC offset after MMS4sdp4 failed, and some other minor fixes.
+2017-08-28 v1.13.1 MMS swwake fix and some other very minor fixes.
+2017-07-07 v1.13.0 MMS swwake removal code and some minor other fixes.
+2017-05-30 v1.12.9 Fix to irf_average_mx (MacOs 10.12.3 and R2017a), MMS correct typo in adc spike removal, and some minor other fixes.
+2017-05-08 v1.12.8 New CDF patch, new Mice, MMS improved offset computations and some minor other fixes.
+2017-03-20 v1.12.7 MMS improved ADP shadow for L2 scpot and corrected meta data, and some minor other fixes.
+2017-02-21 v1.12.6 New CDF patch, MMS corrected meta data, NASA moving to HTTPS, and some minor other fixes.
+2016-12-01 v1.12.5 New CDF patch, new LIBCEF, fixed some issues with MMS FPI v3.1 files, and some minor other fixes.
+2016-10-25 v1.12.4 Mainly improved MMS code, updated fix MMS4 sdp4 failure (burst), and some minor other fixes.
+2016-10-05 v1.12.3 Updated fix for MMS4 sdp4 failure, CAA download fix (MatlabR2015a) and some minor other fixes.
+2016-08-22 v1.12.2 New leap second (2017/01), MMS4 sdp4 failure (2016/06/12) and some other minor enhancements and fixes.
+2016-06-20 v1.12.1 NASA CDF patch, MMS improved delta offset, TSeries enhancements and other minor fixes.
+2016-04-14 v1.12.0 Cluser (CSA) moving to HTTPS only, some other TSeries and minor fixes.
+2016-02-26 v1.11.2 MMS L2 scpot improved, add license texts to be legally compliant, TSeries and minor fixes.
+2016-02-18 v1.11.1 MMS fix for Brst L2Pre processing and calibration files in correct name and paths.
+2016-02-12 v1.11.0 NASA CDF patch, MMS new standard variable names (L2 products), also closing some issues and many, many other bug fixes.
+2015-11-17 v1.10.1 Fix mjuliandate in coord.transform, MMS new versions of QL/Usc/L2A (use defatt & aspoc), TSeries allowed in more functions, many other bug fixes.
+2015-10-12 v1.10.0 Epoch <1970 fix impacted coord. transform., MMS ADP scalefactor 1.5, TSeries allowed in more functions, many other bug fixes.
+2015-08-27 v1.9.5 MMS bugfix for Usc and QL, TSeries improvements, C4p3 failed, minor bug fixes.
+2015-08-12 v1.9.4 MMS multiple HK, 12th IGRF, caa_load fix, allow TSeries input in more functions, minor bug fixes.
+2015-07-29 v1.9.3 MMS allow for datagaps in processing for SITL, some minor update to TSeries and other bug fixes.
+2015-06-24 v1.9.2 MMS bugfix phase & Quality calculated, Cluster MS offset updated and some other minor bug fixes.
+2015-06-17 v1.9.1 MMS bugfix Signal Processing Toolbox not installed at SDC, some other minor bug fixes.
+2015-06-16 v1.9.0 NASA CDF patch, new TSeries, MMS ADP shadow removal, classes of GenericTimeArray (EpochTT etc), minor bug fixes.
+2015-05-18 v1.8.2 Bug fix in MMS resample probe, some exteded support in irf_time, minor bug fixes.
+2015-05-11 v1.8.1 Final NASA CDF patch (Linux bugfix and Win32 added), MMS allow for combined DCE&DCV file, minor bug fixes.
+2015-04-28 v1.8.0 MMS first release after boom deployed, new NASA CDF patch, irf_time use TT2000 internally, many minor bug fixes.
+2015-02-06 v1.7.3 WHAMP calling script bug fix: change complex transpose to normal transpose
+2015-02-06 v1.7.2 HG1,2 compatibility, WHAMP updates
+2014-11-05 v1.7.1 bug fix in dataobj.get_variable()
+2014-10-30 v1.7.0 CAA @ESTEC is closed, now data downloaded from @ESAC, new NASA CDF patch, many minor bug fixes
+2014-08-30 v1.6.2 different minor bug fixes
+2014-07-03 v1.6.1 bug fix reading datasets with '-' in name. If problems with git get a new copy of irfu-matlab!
+2014-06-25 v1.6.0 reading data from CSA@ESAC as default + many other improvements
+2014-04-21 v1.5.5 several bug fixes
+2014-03-24 v1.5.4 bug fix for dataobj() tint when delta_plus/minus are values and not variables
+2014-03-20 v1.5.3 bug fix for dataobj() tint with delta_plus/delta_minus, minor updates
+2014-03-18 v1.5.2 minor bug fix for dataobj() tint 
+2014-03-11 v1.5.1 checks whether ceflib is working
+2014-03-11 v1.5.0 many bug fixes, c_caa_cef_var_get() can stream data from CAA
+2014-02-21 v1.4.6 minor fixes in different routines
+2014-02-19 v1.4.5 caa_meta() update, irf_spectrogram() bug fix, other minor fixes
+2014-02-12 v1.4.4 crlf fixes, minor improvements to some routines
+2014-02-05 v1.4.3 added errorbar_tick, +maarble updates, several improvements
+2013-12-11 v1.4.2 fixed launchpad bug 1258510
+2013-11-13 v1.4.1 minor updates
+2013-11-13 v1.4.0 updated support for CSA
+2013-11-06 v1.3.1 added *.m to .gitatributes to have LF endings in all *.m files
+2013-11-06 v1.3.0 updated CDF patch to v3.5.0.1, irf_log moved to irf.log, several bug fixes
+2013-10-08 v1.2.1 irf.geocentric_coordinate_transformation replicates columns 5:end in output
+2013-10-08 v1.2.0 whamp mexfiles (Mac,Linux) are part of irfu-matlab and other bunch of changes
+2013-09-16 v1.1.3 modified caa_load caa_download for cfa
+2013-09-13 v1.1.2 checks for errors when testing libraries
+2013-09-13 v1.1.1 checks for errors when testing libraries
+2013-09-13 v1.1.0 directory restructuring 
+2013-09-13 v1.0.3 checking version against github server instead irfu
+2013-09-13 v1.0.2 removed libcef/ and improved README.md
+2013-09-12 v1.0.1 new: cef_get_data() CEF file reading, add: caa_download() CFA reading, CAA streaming support 
+2013-06-19 name change c_caa_meta > caa_meta, caa metadata index updated, many other minor things
+2013-05-21 caa_download new option 'listdata', new: c_caa_meta(), many other minor bug fixes and improvements
+2013-04-27 implemented IGRF in model.igrf and Hapgood 1997 in irf.geocentric_coordinate_transformation
+2013-04-24 use your own caa user/password when interacting with caa
+2013-03-11 irfu-matlab moved to git! https://github.com/irfu/irfu-matlab
+2013-03-04 caa_download - added option downloadDirectory=... 
+2013-02-25 c_4_r - added elipticity, planarity and scale outputs
+2013-02-13 model.magnetopause_normal - Shue 1998 model
+2013-02-12 model.magnetopause_normal - Shue 1997 model
+2013-02-04 added irfdemo, run irf('demo') to see it 
+2012-01-01 added onera files IRBEM-LIB
+2010-01-01 started cvs 

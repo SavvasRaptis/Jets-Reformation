@@ -1,0 +1,169 @@
+!
+! Source : CX_CH_EFW_L3_E.ceh
+! Generated: DDD
+!
+START_META     =   DATA_TYPE
+   ENTRY       =   "CP"
+END_META       =   DATA_TYPE
+START_META     =   DATASET_ID
+   ENTRY       =   "CXXX_CP_EFW_L3_E"
+END_META       =   DATASET_ID
+START_META     =   DATASET_TITLE
+   ENTRY       =   "2D E-field, ISR2, spacecraft frame (4 sec resolution)"
+END_META       =   DATASET_TITLE
+START_META     =   DATASET_TYPE
+   ENTRY       =   "Electric_Field"
+END_META       =   DATASET_TYPE
+START_META     =   DATASET_DESCRIPTION
+   ENTRY       =   "This dataset contains measurements of the"
+   ENTRY       =   "Electric field (4 sec resolution)"
+   ENTRY       =   "from the EFW experiment on the Cluster CXXX spacecraft"
+   ENTRY       =   " "
+   ENTRY       =   "Detailed quality information is provided as a 16 bit set of flags"
+   ENTRY       =   "in the parameter E_bitmask__CXXX_CP_EFW_L3_E. The meaning of"
+   ENTRY       =   "the bits is as follows (LSB numbering starting at 0):"
+   ENTRY       =   "Bit  0: Reset."
+   ENTRY       =   "Bit  1: Bad bias."
+   ENTRY       =   "Bit  2: Probe latchup."
+   ENTRY       =   "Bit  3: Low density saturation (-68V)."
+   ENTRY       =   "Bit  4: Sweep (collection and dump)."
+   ENTRY       =   "Bit  5: Burst dump."
+   ENTRY       =   "Bit  6: Non-standard operations (NS_OPS)."
+   ENTRY       =   "Bit  7: Manual flag."
+   ENTRY       =   "Bit  8: Not used."
+   ENTRY       =   "Bit  9: Not used."
+   ENTRY       =   "Bit 10: Solar wind wake correction applied."
+   ENTRY       =   "Bit 11: Lobe wake."
+   ENTRY       =   "Bit 12: Plasmaspheric wake."
+   ENTRY       =   "Bit 13: Whisper operating."
+   ENTRY       =   "Bit 14: Saturation due to high bias current."
+   ENTRY       =   "Bit 15: Not used."
+END_META       =   DATASET_DESCRIPTION
+START_META     =   DATASET_CAVEATS
+   ENTRY       =   "Level 3 quantity E is the electric field in the spin plane, calculated"
+   ENTRY       =   "from a sine wave least-squares fit to the raw data Level 1 quantity P12"
+   ENTRY       =   "or P34, depending on which quantity is available."
+   ENTRY       =   ""
+   ENTRY       =   "Various potential problems in the data have been treated automatically"
+   ENTRY       =   "in the CAA data processing. Examples are solar wind, lobe, and"
+   ENTRY       =   "plasmaspheric wakes. Data quality is indicated by the variable"
+   ENTRY       =   "E_quality__CXXX_CP_EFW_L3_E (4=best quality). Detailed quality"
+   ENTRY       =   "information is given in the 16-bit variable E_bitmask__CXXX_CP_EFW_L3_E."
+   ENTRY       =   "Please refer to the DATASET_DESCRIPTION metadata for details."
+   ENTRY       =   ""
+   ENTRY       =   "For more information on data quality and how the CAA data are processed,"
+   ENTRY       =   "please consult the EFW CAA Users Guide and the EFW CAA Interface Control"
+   ENTRY       =   "Document (ICD)."
+   ENTRY       =   ""
+   ENTRY       =   "Note that the observations are done in the ISR2 spin plane. The spin"
+   ENTRY       =   "axis component is not available, so the resulting measurement is not the"
+   ENTRY       =   "full 3D electric field vector."
+END_META       =   DATASET_CAVEATS
+START_META     =   TIME_RESOLUTION
+   ENTRY       =   4
+END_META       =   TIME_RESOLUTION
+START_META     =   MIN_TIME_RESOLUTION
+   ENTRY       =   4
+END_META       =   MIN_TIME_RESOLUTION
+START_META     =   MAX_TIME_RESOLUTION
+   ENTRY       =   4
+END_META       =   MAX_TIME_RESOLUTION
+START_META     =   PROCESSING_LEVEL
+   ENTRY       =   "Calibrated"
+END_META       =   PROCESSING_LEVEL
+
+START_META     =   CONTACT_COORDINATES
+   ENTRY       =   "Mats Andre>PI>Mats.Andre@irfu.se"
+END_META       =   CONTACT_COORDINATES
+!
+START_META     =   ACKNOWLEDGEMENT
+   ENTRY       =   "Please acknowledge the EFW team and the ESA Cluster Active Archive in any"
+   ENTRY       =   "publication based upon use of these data"
+END_META       =   ACKNOWLEDGEMENT
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                   Variables                         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+START_VARIABLE    = time_tags__CXXX_CP_EFW_L3_E
+  PARAMETER_TYPE    = "Support_Data"
+  VALUE_TYPE      = ISO_TIME
+  DELTA_PLUS      = 2
+  DELTA_MINUS     = 2
+  FILLVAL         = 9999-12-31T23:59:59Z
+  LABLAXIS        = "UT"
+  FIELDNAM        = "Universal Time"
+END_VARIABLE      = time_tags__CXXX_CP_EFW_L3_E
+!
+START_VARIABLE      = E_Vec_xy_ISR2__CXXX_CP_EFW_L3_E
+  PARAMETER_TYPE    = "Data"
+  SIZES             = 2
+  VALUE_TYPE        = FLOAT
+  ENTITY            = "Electric_Field"
+  PROPERTY          = "Vector"
+  FLUCTUATIONS      = "Waveform"
+  CATDESC           = "Electric field (4 sec resolution)"
+  FIELDNAM          = "Electric field (4 sec resolution)"
+  SI_CONVERSION     = "1.0e-3>V m^-1"
+  UNITS             = "mV/m"
+  FILLVAL           = -1000000000.000
+  QUALITY           = E_quality__CXXX_CP_EFW_L3_E
+  SIGNIFICANT_DIGITS= 6
+  COORDINATE_SYSTEM = "ISR2"
+  FRAME_VELOCITY    = "Observatory"
+  TENSOR_ORDER      = 1
+  REPRESENTATION_1  = "x", "y"
+  LABEL_1           = "Ex", "Ey"
+  LABLAXIS          = "E"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L3_E
+END_VARIABLE        = E_Vec_xy_ISR2__CXXX_CP_EFW_L3_E
+!
+START_VARIABLE      = E_sigma__CXXX_CP_EFW_L3_E
+  PARAMETER_TYPE    = "Data"
+  SIZES             = 1
+  VALUE_TYPE        = FLOAT
+  ENTITY            = "Electric_Field"
+  PROPERTY          = "Magnitude"
+  FLUCTUATIONS      = "Fluctuation_Level"
+  CATDESC           = "Electric field standard deviation"
+  FIELDNAM          = "Electric field standard deviation"
+  SI_CONVERSION     = "1.0e-3>V m^-1"
+  UNITS             = "mV/m"
+  FILLVAL           = -1000000000.000
+  QUALITY           = E_quality__CXXX_CP_EFW_L3_E
+  SIGNIFICANT_DIGITS= 6
+  LABLAXIS          = "St dev"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L3_E
+END_VARIABLE        = E_sigma__CXXX_CP_EFW_L3_E
+!
+START_VARIABLE      = E_bitmask__CXXX_CP_EFW_L3_E
+  PARAMETER_TYPE    = "Support_Data"
+  SIZES             = 1
+  VALUE_TYPE        = INT
+  ENTITY            = "Electric_Field"
+  PROPERTY          = "Status"
+  CATDESC           = "Electric field measurement quality bitmask"
+  FIELDNAM          = "Electric field measurement quality bitmask"
+  SI_CONVERSION     = "1>unitless"
+  UNITS             = "unitless"
+  FILLVAL           = 0
+  SIGNIFICANT_DIGITS= 5
+  LABLAXIS          = "Bitmask"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L3_E
+END_VARIABLE        = E_bitmask__CXXX_CP_EFW_L3_E
+!
+START_VARIABLE      = E_quality__CXXX_CP_EFW_L3_E
+  PARAMETER_TYPE    = "Support_Data"
+  SIZES             = 1
+  VALUE_TYPE        = INT
+  ENTITY            = "Electric_Field"
+  PROPERTY          = "Status"
+  CATDESC           = "Electric field measurement quality flag (4=best)"
+  FIELDNAM          = "Electric field measurement quality flag (4=best)"
+  SI_CONVERSION     = "1>unitless"
+  UNITS             = "unitless"
+  FILLVAL           = 0
+  QUALITY           = 0
+  SIGNIFICANT_DIGITS= 1
+  LABLAXIS          = "Quality"
+  DEPEND_0          = time_tags__CXXX_CP_EFW_L3_E
+END_VARIABLE        = E_quality__CXXX_CP_EFW_L3_E
