@@ -27,10 +27,6 @@ At the time of the latest submission of the article, the following software vers
 * MATLAB version: R2020b
 * OS: Windows 10 Education, build: 19042.1288
 
-## License
-
-This project is licensed under the GNU GENERAL PUBLIC LICENSE  - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 We thank the MMS team for providing data and support. We acknowledge the use of NASA/GSFC's Space Physics Data Facility's OMNIWeb service, and OMNI data. We acknowledge the use of [irfu-matlab package](https://github.com/irfu). We thank M. Lindberg and A. Lalti, for their comments on the initial stage of the work. We are also thankful for the useful discussions done with the International Space Sciences Institute (ISSI) team, “Foreshocks Across The Heliosphere: System Specific Or Universal Physical Processes?”
