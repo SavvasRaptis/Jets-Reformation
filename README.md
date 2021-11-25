@@ -4,10 +4,10 @@ In this repository we provide information and dataset that allow the reproductio
 [![Publication: Under consideration](https://img.shields.io/badge/Publication-Under%20consideration-green?style=flat&logo=openaccess)](https://www.researchsquare.com/article/rs-711807/v1)
 
 ### Corresponding Author
-[![Savvas Raptis: 0000-0002-4381-3197](https://img.shields.io/badge/Savvas%20Raptis-0000--0002--4381--3197-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-4381-3197) 
+[![Savvas Raptis: 0000-0002-4381-3197](https://img.shields.io/badge/Savvas%20Raptis-0000--0002--4381--3197-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-4381-3197)
 
 ## Repository Content
-* [data](data) : Contains a .mat file with the MMS measurements. Furthermore, we provide a README file with the information about the data provided. We however, strongly recommend if to visit the official MMS and OMNIweb repositories and acknowledge their use rather than using the pre made data products of this folder. If someone is interested to reproduce the results, we do provide the data in this folder for direct use.
+* [data](data) : Contains a .mat file with the MMS measurements and another .mat file with the magneosheath jet partial moments used. Furthermore, we provide a README file with the information about the data provided. We however, strongly recommend if to visit the official MMS and OMNIweb repositories and acknowledge their use rather than using the pre made data products of this folder. If someone is interested to reproduce the results, we do provide the data in this folder for direct use.
 
 * [figures](figures): Contains a step-by-step guide on how to fully reproduce the figures of the work along with which function of [irfu-matlab](https://github.com/irfu/irfu-matlab) was used in each case.
 
@@ -26,10 +26,6 @@ At the tome of the latest submission of the article, the following software vers
 * inkscape version:  v0.92
 * MATLAB version: R2020b
 * OS: Windows 10 Education, build: 19042.1288
-
-## License
-
-This project is licensed under the GNU GENERAL PUBLIC LICENSE  - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
