@@ -1,5 +1,5 @@
 # Reproduce figures
-Source data are accessible freely online. Magnetospheric Multiscale (MMS) are available through the [MMS repository](https://lasp.colorado.edu/mms/sdc/public/). For the solar wind measurements, one can access the [OMNI high-resolution](https://omniweb.gsfc.nasa.gov/form/omni_min.html) repository. Alternatively you can access the MMS data directly from a pre-made .mat file available in the data folder of this [repository]((https://github.com/SavvasRaptis/Jets-Reformation))
+Data for reproducing the analysis of the manuscript and the fiures are accessible freely online. Magnetospheric Multiscale (MMS) are available through the [MMS repository](https://lasp.colorado.edu/mms/sdc/public/). For the solar wind measurements, one can access the [OMNI high-resolution](https://omniweb.gsfc.nasa.gov/form/omni_min.html) repository. Alternatively you can access the MMS data directly from a pre-made .mat files available in the data folder of this [repository]((https://github.com/SavvasRaptis/Jets-Reformation))
 
 ## General instructions
 
@@ -8,7 +8,7 @@ MMS examples are located here: https://github.com/irfu/irfu-matlab/tree/master/p
 
 In all the figures, the special notation was done by editing vector graphic files exported from MATLAB with Inkscape.
 
-Inkscape is an open source vector graphic software, available on https://inkscape.org/
+Inkscape is an open source vector graphic software, available on https://inkscape.org/.
 
 We will discuss below how to generate the base figures that do not include the special notation (shading, numbering etc.) to assist any reader interested in re-producing our results.
 
@@ -19,11 +19,11 @@ We will discuss below how to generate the base figures that do not include the s
 * FIG1 and FIG2 (a) were generated using the  mms.mms4_pl_conf function of [irfu-matlab](https://github.com/irfu/irfu-matlab) package
 FIG1 and FIG2 (b,c) are ladder plots of different MMS spacecraft. all the raw data available for them can be found in the MMS public depository.
 
-* For panels 3-5 for FIG1,2 (b,c) one can use the iPDist.reduce function of [irfu-matlab](https://github.com/irfu/irfu-matlab) package in 1D on x,y,z GSE coordinates. The panels correspond to 1D reduced velocity distribution functions
+* For panels 3-5 for FIG1,2 (b,c) one can use the iPDist.reduce function of [irfu-matlab](https://github.com/irfu/irfu-matlab) package in 1D on x,y,z GSE coordinates. The panels correspond to 1D reduced velocity distribution functions.
 
-* For panel 9 for FIG1,2 (b,c) one can use irf_spectrogram of [irfu-matlab](https://github.com/irfu/irfu-matlab) package. The panels correspond to ion differential energy flux spectrum
+* For panel 9 for FIG1,2 (b,c) one can use irf_spectrogram of [irfu-matlab](https://github.com/irfu/irfu-matlab) package. The panels correspond to ion differential energy flux spectrum.
 
-- The rest of the panels are essentially timeseries plots made with irf_plot of [irfu-matlab](https://github.com/irfu/irfu-matlab)
+- The rest of the panels are essentially timeseries plots made with irf_plot and irf_panel of [irfu-matlab](https://github.com/irfu/irfu-matlab).
 
 ### Figures 3,5
 
@@ -43,7 +43,7 @@ FIG1 and FIG2 (b,c) are ladder plots of different MMS spacecraft. all the raw da
 
 ### Figure 6
 
-* To generate FIG6 one has to use MMS 1 to cross corelate the rest of the spacecraft measurements with respect to it. For picking the time period, one can focus on the region ("1") as discussed in the manuscript or extend the period to include a larger part. One can use the sample cross-correlation function as implemented in MATLAB software, https://mathworks.com/help/econ/crosscorr.html to perform the task. As discussed in the manuscript, adapting the period of time must produce no significant differences in the optimal time lag between the measurements.
+* To generate FIG6 one has to use MMS 1 to cross corelate the rest of the spacecraft measurements with respect to it. For picking the time period, one can focus on the region ("1") as discussed in the manuscript or extend the period to include a larger part. One can use the sample cross-correlation function as implemented in MATLAB software, https://mathworks.com/help/econ/crosscorr.html to perform the task. As discussed in the manuscript, adapting the period of time must produce no significant differences in the optimal time lag between the measurements. More information abou this process can be found in the methods section of the article and in the references cited there.
 
 * The plot itself is a typical ladder plot of 4 timerseries that include magnetic field measurements. Similar to the figures above, one can use the irf_plot function of [irfu-matlab](https://github.com/irfu/irfu-matlab) package.
 
@@ -51,4 +51,6 @@ FIG1 and FIG2 (b,c) are ladder plots of different MMS spacecraft. all the raw da
 
 * FIG 7(a) was completely done using vector graphics in inkscape by the corresponding author.
 
-* FIG 7(b) is a timeseries ladder plot using simple plotting routines and the irf_spectrogram of [irfu-matlab](https://github.com/irfu/irfu-matlab) package
+* FIG 7(b) is a timeseries ladder plot using simple plotting routines and the irf_spectrogram of [irfu-matlab](https://github.com/irfu/irfu-matlab) package.
+
+If more information are needed, the reader may contact the corresponding author. 
