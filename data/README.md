@@ -21,4 +21,4 @@ Furthermore, startepochtt and stopepochtt define the period of time (tint) in ep
 
 **partial_moments_jet.mat** is a  structure containing the particle moments: density, bulk velocity, pressure, temperature, particle heat flux vector as TSeries'.
 
-For more information about the generation of each figure with the usage of either the raw data or the pre-compiles versions above, please visit the README file of the figure subfolder of the main repository [jets-reformation](https://github.com/SavvasRaptis/Jets-Reformation)
+For more information about the generation of each figure with the usage of either the raw data or the pre-compiles versions above, please visit the README file of the figure subfolder of the main repository [jets-reformation](https://github.com/SavvasRaptis/Jets-Reformation) folder.
