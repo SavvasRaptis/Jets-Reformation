@@ -51,10 +51,8 @@ FIG. 1 and FIG. 2 (a,b) are ladder plots of different MMS spacecraft. all the ra
 
 ### Figure 8
 
-* FIG. 8(a) was generated using the mms.mms4_pl_conf function of [irfu-matlab](https://github.com/irfu/irfu-matlab) package
+* FIG. 8(a) was completely done using vector graphics in inkscape by the corresponding author.
 
-* FIG. 8(b) was completely done using vector graphics in inkscape by the corresponding author.
-
-* FIG. 8(c) is a timeseries ladder plot using simple plotting routines and the irf_spectrogram of [irfu-matlab](https://github.com/irfu/irfu-matlab) package.
+* FIG. 8(b) is a timeseries ladder plot using simple plotting routines and the irf_spectrogram of [irfu-matlab](https://github.com/irfu/irfu-matlab) package.
 
 If more information are needed, the reader may contact the corresponding author. 
