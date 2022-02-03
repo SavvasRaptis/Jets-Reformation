@@ -1,7 +1,11 @@
 # Jets Reformation
-In this repository we provide information and dataset that allow the reproduction of the results found in the manuscript "Downstream High-speed Plasma Jet Generation as a Direct Consequence of Shock Reformation" currently under consideration for Nature Communications journal.
+In this repository we provide information and dataset that allow the reproduction of the results found in the manuscript "Downstream High-speed Plasma Jet Generation as a Direct Consequence of Shock Reformation" published in Nature Communications journal.
 
-[![Publication: Under consideration](https://img.shields.io/badge/Publication-Under%20consideration-green?style=flat&logo=openaccess)](https://www.researchgate.net/publication/354343974_Downstream_Super-magnetosonic_Plasma_Jet_Generation_as_a_Direct_Consequence_of_Shock_Reformation)
+[![Publication: Published](https://img.shields.io/badge/Publication-Published-green?style=flat&logo=openaccess)](https://www.nature.com/articles/s41467-022-28110-4)
+
+### Cite as 
+*Raptis, S., Karlsson, T., Vaivads, A. et al. Downstream high-speed plasma jet generation as a direct consequence of shock reformation. Nat Commun 13, 598 (2022). https://doi.org/10.1038/s41467-022-28110-4*
+
 
 ### Corresponding Author
 [![Savvas Raptis: 0000-0002-4381-3197](https://img.shields.io/badge/Savvas%20Raptis-0000--0002--4381--3197-green?style=flat&logo=orcid)](https://orcid.org/0000-0002-4381-3197)
