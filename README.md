@@ -22,7 +22,7 @@ In this repository we provide information and dataset that allow the reproductio
 For fully reproducing the figures you will need the irfu-matlab library which is available at [irfu-matlab](https://github.com/irfu/irfu-matlab), then simply add the library to MATLAB's path and run:
 
 ```matlab
-irfu
+irf
 ```
 At the time of the latest submission of the article, the following software versions were used:
 
